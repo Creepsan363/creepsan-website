@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Products Smart Gizmo</title>
+			<link rel="stylesheet" href="products.css">
+		</head>
+		<body>
+		 <div id="main-con">
+			<!-- Navigation -->
+			<div id="navigation-con">
+				<div id="home-con"> <h4 class="home-txt">Home</h4></div>
+				<div id="about-con"> <h4 class="about-txt">About</h4></div>
+				<div id="products-con"> <h4 class="products-txt">Produts</h4></div>
+				<div id="contact-con"> <h4 class="contact-txt">Contact</h4></div>
+			</div>
+			
+			<!-- Logo -->
+			<div id="logo-con">
+				<img class="logo" src="images/logo.webp" alt="images">
+			</div>
+			
+			<!-- Sales -->
+			<div id="sales-txt-con">
+				<h1 class="sales-txt">Sales</h1>
+            </div>
+            
+            <!-- Sales Products -->
+            <div id="sales-product-con">
+            	<div id="product1-sales-con"></div>
+                <div id="product2-sales-con"></div>
+                <div id="product3-sales-con"></div>
+                <div id="sales4"></div>
+            </div>
+            
+            <!-- All Products txt -->
+            <div id="all-products-txt-con">
+            	<h1 class="all-products-txt">All Products</h1>
+            </div>
+            
+            <!-- All Products -->   	
+            <select id="sort" onchange="changeProduct(this.value)">
+            	<option value="" disabled selected>Filter</option>
+            	<option value="default">default</option>
+                <option value="rating">Sort by rating</option>
+                <option value="price">Sort by price</option>
+                <option value="popularity">Sort by popularity</option> 
+            </select>
+            
+            <div id="all-products-main-con">
+            	
+              <div id="all-products-sub-con">
+            	<div class="all-product1-con">
+            	 <img id="all-product-tv1" src="images/products/tv1.jpeg">
+                 <div id="product1-name-con">
+                 	<h4 id="product1-name-txt">Samsung 43 inch TV HD LED</h4>
+                 </div>
+                 <div id="product1-price-con">
+                 	<h4 id="product1-price-txt">Rp 28,999.00</h4>
+                 </div>
+                 <img id="product1-rating" src="images/rating-icons/star4.png">
+                </div>
+                
+                <div class="all-product2-con">
+                	<img id="all-product-tv2" src="images/products/tv2.jpeg">
+                    <div id="product2-name-con">
+                 	<h4 id="product2-name-txt">Lenovo Panasonic Tv 108cm</h4>
+                    </div>
+                    <div id="product2-price-con">
+                 	<h4 id="product2-price-txt">Rp 18,599.00</h4>
+                    </div>
+                    <img id="product2-rating" src="images/rating-icons/star3.png">
+                </div>
+                
+                <div class="all-product3-con">
+                	<img id="all-product-tv3" src="images/products/tv3.jpg">
+                    <img id="product3-rating" src="images/rating-icons/star4.png">
+                    <div id="product3-name-con">
+                 	<h4 id="product3-name-txt">Intex 4k HD LED</h4>
+                    </div>
+                    <div id="product3-price-con">
+                 	<h4 id="product3-price-txt">Rp 32,000.00</h4>
+                    </div>
+                </div>
+                
+                <div class="all-product4-con">
+                	<img id="all-product-tv4" src="images/products/tv4.jpg">
+                    <img id="product4-rating" src="images/rating-icons/star4.png">
+                    <div id="product4-name-con">
+                 	<h4 id="product4-name-txt">Intex 139cm Full HD LED</h4>
+                    </div>
+                    <div id="product4-price-con">
+                 	<h4 id="product4-price-txt">Rp 25,499.00</h4>
+                    </div>
+                </div>
+                
+              </div>
+              
+              
+              
+              <!-- sub con 2 products -->
+              <div id="all-products-sub2-con">
+              	
+                <div class="all-product5-con">
+              	<img id="all-product-tv5" src="images/products/tv5.jpeg">
+                  <img id="product5-rating" src="images/rating-icons/star3-5.png">
+                  <div id="product5-name-con">
+                 	<h4 id="product5-name-txt">Itel 32 HD LED TV</h4>
+                  </div>
+                  <div id="product5-price-con">
+                 	<h4 id="product5-price-txt">Rp 15,000.00</h4>
+                  </div>
+                </div>
+                
+                <div class="all-product6-con">
+                	<img id="all-product-tv6" src="images/products/tv6.jpg">
+                    <img id="product6-rating" src="images/rating-icons/star2.png">
+                    <div id="product6-name-con">
+                 	<h4 id="product6-name-txt">Panasonic 32 inch HD TV</h4>
+                    </div>
+                    <div id="product6-price-con">
+                 	<h4 id="product6-price-txt">Rp 18,000.00</h4>
+                    </div>
+                </div>
+                
+                <div class="all-product7-con">
+                	<img id="all-product-tv7" src="images/products/tv7.jpg">
+                    <img id="product7-rating" src="images/rating-icons/star2-5.png">
+                    <div id="product7-name-con">
+                 	<h4 id="product7-name-txt">LG 4k Smart QNED TV</h4>
+                    </div>
+                    <div id="product7-price-con">
+                 	<h4 id="product7-price-txt">Rp 19,899.00</h4>
+                    </div>
+                </div>
+                
+                <div class="all-product8-con">
+                	<img id="all-product-tv8" src="images/products/tv8.jpeg">
+                    <img id="product8-rating" src="images/rating-icons/star4.png">
+                    <div id="product8-name-con">
+                 	<h4 id="product8-name-txt">Itel Smart LED HD TV</h4>
+                    </div>
+                    <div id="product8-price-con">
+                 	<h4 id="product8-price-txt">Rp 22,500.00</h4>
+                    </div>
+                </div>
+                
+              </div>
+              
+              
+              
+              <!-- Sub con 3 products -->
+              <div id="all-products-sub3-con">
+              	
+                <div class="all-product9-con">
+              	<img id="all-product-tv9" src="images/products/tv9.jpg">
+                  <img id="product9-rating" src="images/rating-icons/star1-5.png">
+                  <div id="product9-name-con">
+                 	<h4 id="product9-name-txt">Intex 80cm HD LED TV</h4>
+                  </div>
+                  <div id="product9-price-con">
+                 	<h4 id="product9-price-txt">Rp 12,999.00</h4>
+                  </div>
+                </div>
+                
+                <div class="all-product10-con">
+              	<img id="all-product-tv10" src="images/products/tv10.jpg">
+                  <img id="product10-rating" src="images/rating-icons/star3.png">
+                  <div id="product10-name-con">
+                 	<h4 id="product10-name-txt">Lenovo Thinkvision E24Q-20</h4>
+                  </div>
+                  <div id="product10-price-con">
+                 	<h4 id="product10-price-txt">Rp 35,000.00</h4>
+                  </div>
+                </div>
+                
+                <div class="all-product11-con">
+                	<img id="all-product-tv11" src="images/products/tv11.webp">
+                    <img id="product11-rating" src="images/rating-icons/star4-5.png">
+                    <div id="product11-name-con">
+                 	<h4 id="product11-name-txt">Panasonic NX800 Smart HD 4k</h4>
+                    </div>
+                    <div id="product11-price-con">
+                 	<h4 id="product11-price-txt">Rp 15,299.00</h4>
+                    </div>
+                </div>
+                
+                <div class="all-product12-con">
+                	<img id="all-product-tv12" src="images/products/tv12.jpg">
+                    <img id="product12-rating" src="images/rating-icons/star4-5.png">
+                    <div id="product12-name-con">
+                 	<h4 id="product12-name-txt">Samsung 2024 QLED HD TV</h4>
+                    </div>
+                    <div id="product12-price-con">
+                 	<h4 id="product12-price-txt">Rp 35,599.00</h4>
+                    </div>
+                </div>
+                
+              </div>
+              
+            </div>
+            
+            <!-- Selection of Products Pages -->
+            <div id="product-pages-con">
+            	<div id="select1-con">
+            	    <h4 class="select1-txt">1</h4>
+                </div>
+                <div id="select2-con">
+                	<h4 class="select1-txt">2</h4>
+                </div>
+                <div id="select3-con">
+                	<h4 class="select1-txt">3</h4>
+                </div>
+            </div>
+            
+		 </div>
+		<script src="products.js">
+		</script>
+		</body>
+	</html>

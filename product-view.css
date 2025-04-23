@@ -1,0 +1,166 @@
+#main-con {
+	 position:absolute;
+	 width: 100vw;
+	 height: 100vh;
+	 left: 0vw;
+	 top: 0vh;
+	 background-color: black;
+	 overflow: auto;
+	}
+	
+#navigation-con {
+	 position:absolute;
+	 width:100vw;
+	 height:7.5vh;
+	 left:0%;
+	 top:0%;
+	 background-color: #353535;
+	}
+	
+#home-con, #about-con, #products-con, #contact-con {
+	 position: absolute;
+	 width: 20%;
+	 height: 70%;
+	 background-color: skyBlue;
+	 color: white;
+	 border-radius: 2vw;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	}
+	
+#home-con {
+	 left: 2%;
+	 top: 15%;
+	}
+	
+#about-con {
+	 left: 27%;
+	 top: 15%;
+	}
+	
+#products-con {
+	 left: 52%;
+	 top: 15%;
+	}
+	
+#contact-con {
+	 left: 77%;
+	 top: 15%;
+	}
+	
+.home-txt, .about-txt, .products-txt, .contact-txt {
+	 font-size: 3vw;
+	 font-weight: bold;
+	}
+	
+	
+	
+/* Product style section */
+#view-con {
+	 position: absolute;
+	 width: 90vw;
+	 height: 150vh;
+	 left: 5vw;
+	 top: 15vh;
+	 background-color: #353535;
+	 border-radius: 2vw;
+	}
+	
+#product-details-con {
+	 position: absolute;
+	 width: 90%;
+	 height: 30%;
+	 left: 5%;
+	 top: 2.5%;
+	 background-color: black;
+	 border-radius: 1.5vw;
+	}
+	
+#product1-img {
+	 position: absolute;
+	 width: 96%;
+	 height: 50%;
+	 left: 2%;
+	 top: 1.5%;
+	 border-radius: 1vw;
+	}
+	
+#product1-name-con, #product1-price-con {
+	 position: absolute;
+	 width: 96%;
+	 height: 12.5%;
+	 color: skyBlue;
+	 display: flex;
+	 justify-content: flex-start;
+	 align-items: center;
+	}
+	
+#product1-name-con {
+	 left: 2%;
+	 top: 50%;
+	}
+	
+#product1-price-con {
+	 left: 2%;
+	 top: 57.5%;
+	}
+	
+#product1-name-txt, #product1-price-txt {
+	 font-size: 5vw;
+	}
+	
+	
+	
+#product1-rating {
+	 position: absolute;
+	 width: 30%;
+	 height: 8%;
+	 left: 4%;
+	 top: 67.5%;
+	}
+	
+	
+	
+/* Description style section */
+#description-main-con {
+	 position: absolute;
+	 width: 90%;
+	 height: 40%;
+	 left: 5%;
+	 top: 35%;
+	 background-color: black;
+	 border-radius: 1vw;
+	}
+	
+#description-txt-con {
+	 position: absolute;
+	 width: 40%;
+	 height: 10%;
+	 left: 5%;
+	 top: 4.5%;
+	 display: flex;
+	 justify-content: flex-start;
+	 align-items: center;
+	}
+	
+#description-txt {
+	 color: white;
+	 font-size: 5vw;
+	}
+	
+#description-content-con {
+	 position: absolute;
+	 width: 90%;
+	 height: 80%;
+	 left: 5%;
+	 top: 15%;
+	 display: flex;
+	 justify-content: flex-start;
+	 overflow: auto;
+	}
+	
+#description-content-txt {
+	 font-size: 3vw;
+	 color: white;
+	}
